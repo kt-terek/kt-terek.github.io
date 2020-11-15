@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    color: #000
+    text-decoration: none
+    list-style: none
+
+html, body, .wrapper, .header
+    height: 100%
+    width: 100%
+
+body
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-size: 18px
+
+.wrapper
+
+.header
+    display: block
+    font-family: 'Open Sans', sans-serif
+    height: 100%
+    width: 100%
+    background: url(..//img/header.jpg) center/cover no-repeat fixed
+
+.main-menu
+
+    // .main-menu__logo
+    &__logo
+        flex: 1 0 25%
+
+    // .main-menu__item
+    &__item
+        flex: 1 1 15%
+        align-self: start
+        margin: 25px 15px
+        height: 100%
+    // .main-menu__button
+    &__button
+
+.fwrapper
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+
+.logo
+    // .logo_icon
+    &_icon
+        display: block
+        padding: 20px
+        max-height: 100px
+
+.menu-button
+    display: inline-block
+    padding: 0 20px
+    min-width: 155px
+    border-radius: 20px
+    text-align: center
+    font-family: 'Open Sans', sans-serif
+    font-weight: 300
+    font-size: 20px
+    line-height: 40px
+    background-color: #dab894
+    border-bottom: 4px solid #cb9b67
+
+    &:hover
+        border-bottom: none
+        transform: translate(0, 4px)
+    // .menu-button_reg
+    &_reg
+        background-color: #de6874
+        border-bottom: 4px solid #d94f5c
+
+//----------------------------------------------------------------
+
+.title
+    margin: 2.5% 5%
+    padding: 40px
+    max-width: 650px
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-size: 64px
+    background: #dab89485
+    border-radius: 25px
+
+    // .title__item
+    &__item
+        display: block
+        padding: 10px 10px 10px 10%
+
+    // .title__name
+    &__name
+        padding: 0 0 40px 0
+        font-size: 128px
+        font-style: italic
+        text-align: center
+
+    // .title__list
+    &__list
+        display: block
+        font-size: 64px
+
+//----------------main------------------------------------------------
+
+.content
+    font-family: 'Nunito', sans-serif
+    font-weight: 400
+    font-size: 20px
+    text-align: justify
+
+    // .content__text
+    &__text
+        padding: 0 0 25px 0
+        max-width: 80%
+        margin: 0 auto
+        line-height: 32px
+        text-indent: 2.5%
+
+    // .content__title
+    &__title
+        padding: 30px
+        font-family: Georgia, 'Times New Roman', Times, serif
+        font-size: 40px
+        font-style: italic
+        line-height: 64px
+        text-align: center
+
+    p
+        padding: 0 0 20px 0
+
+    img
+        display: block
+        max-height: 64px
+        margin: 0 auto
+
+//----------------footer------------------------------------------------
+
+.footer
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    height: 15%
+    background: url(..//img/footer.jpg) center/cover no-repeat
+
+    // .footer__inform
+    &__inform
+        align-self: center
+        flex: 1 1 50%
+        font-family: 'Open Sans', sans-serif
+        font-weight: 300
+        text-transform: uppercase
+
+    // .footer__text
+    &__text
+        padding: 0 15%
+
+    // .footer__links
+    &__links
+        align-self: center
+        flex: 1 1 50%
+
+    // .footer__social
+    &__social
+        padding: 0 10%
+
+.social
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-end
+
+    // .social__item
+    &__item
+        display: block
+        height: 64px
+        width: 64px
+        margin: 5px
+
+        &:nth-child(1)
+            background: url(..//img/maps.svg) center/cover no-repeat
+
+        &:nth-child(2)
+            background: url(..//img/fb.svg) center/cover no-repeat
+
+        &:nth-child(3)
+            background: url(..//img/inst.svg) center/cover no-repeat
+
+        &:nth-child(4)
+            background: url(..//img/tg.svg) center/cover no-repeat
+
+        &:hover
+            transform: scale(1.15)
+
+    // .social__link
+    &__link
+        display: block
+        height: 100%
+        width: 100%
