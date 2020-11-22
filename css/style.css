@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   color: #000;
   text-decoration: none;
   list-style: none;
@@ -14,8 +15,13 @@ html, body, .wrapper, .header {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .header {
@@ -178,4 +184,231 @@ body {
   display: block;
   height: 100%;
   width: 100%;
+}
+
+.prod-wrapper {
+  margin: 0 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.form-button {
+  display: block;
+  padding: 0 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 36px;
+  background-color: #fff;
+  border: 2px solid #dab894;
+  border-radius: 20px;
+}
+.form-button:hover {
+  background-color: #dab894;
+}
+
+.search {
+  margin: 10px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.search__form {
+  display: block;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.search input {
+  display: block;
+  margin: 0 5px;
+  padding: 0 20px;
+  min-width: 300px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 36px;
+  background-color: #fff;
+  border: 2px solid #dab894;
+  border-radius: 42px;
+}
+
+.filtr {
+  margin: 10px 0;
+}
+.filtr__form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.filtr select, .filtr input, .filtr option {
+  margin: 10px;
+  flex: 1 1 10%;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #dab894;
+}
+.filtr select {
+  border-radius: 2.5px;
+  text-align: center;
+  border: 2px solid #b9c9a6;
+}
+.filtr option {
+  border: none;
+}
+.filtr option:hover {
+  background-color: #dab894;
+}
+
+.catalog {
+  margin: 20px 0 30px 0;
+  font-family: "Open Sans", sans-serif;
+}
+.catalog__row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.catalog__item {
+  margin: 10px;
+  flex: 0 1 300px;
+  align-self: auto;
+}
+
+.product {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #dab894;
+}
+.product__photo {
+  display: block;
+  padding: 0 0 10px 0;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.product__type {
+  padding: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+}
+.product__name {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.product__country {
+  flex: 1 1 auto;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 17px;
+}
+.product__about {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #212121;
+  line-height: 20px;
+  text-align: justify;
+  padding: 10px;
+}
+.product__button {
+  display: block;
+  margin: 0 15px 15px 15px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 0.5px solid #212121;
+  border-bottom: 4px solid #212121;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+}
+.product__button:hover {
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper-bg {
+  background: url(..//img/header.jpg) center/cover no-repeat fixed;
+  flex: 1 1 auto;
+}
+
+.wrapper-form {
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  margin: 20px auto 20px;
+  padding: 40px;
+  max-width: 700px;
+  background: #dab89485;
+  border-radius: 25px;
+}
+.form form {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.form__title {
+  padding: 0 0 15px 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 32px;
+  line-height: 40px;
+  font-style: italic;
+  text-align: center;
+}
+.form input, .form textarea {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 0 10px;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  border: none;
+  resize: none;
+}
+.form__submit {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 0 10px;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #dab894;
+  border: none;
+  border-bottom: 4px solid #cb9b67;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.row__item {
+  min-width: 600px;
+  margin: 30px;
 }

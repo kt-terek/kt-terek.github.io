@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Товары</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="top">
+            <nav class="main-menu">
+                <div class="fwrapper">
+                    <div class="main-menu__logo logo">
+                        <img class="logo_icon" src="img/logo.png" alt="Cafe Cult">
+                    </div>
+                    <div class="main-menu__item">
+                        <a href="index.html" class="main-menu__button menu-button">
+                            Главная
+                        </a>
+                    </div>
+                    <div class="main-menu__item">
+                        <a href="products.html" class="main-menu__button menu-button">
+                            Товары
+                        </a>
+                    </div>
+                    <div class="main-menu__item">
+                        <a href="feedback.html" class="main-menu__button menu-button">
+                            Обратная связь
+                        </a>
+                    </div>
+                    <div class="main-menu__item">
+                        <a href="account.html" class="main-menu__button menu-button menu-button_reg">
+                            Регистрация
+                        </a>
+                    </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="prod-wrapper">
+                <section class="functional">
+                    <div class="search">
+                        <form class="search__form" action="" method="POST">
+                            <input type="search" name="search" id="" placeholder="Введите название товара…">
+                            <button class="form-button" type="submit">Поиск</button>
+                        </form>
+                    </div>
+                    <div class="filtr">
+                        <form class="filtr__form" action="#" method="post">
+                            <select name="prod_type" id="" size="1">
+                                <option selected disabled>Тип товара</option>
+                                <option value="type1">Кофе</option>
+                                <option value="type2">Чай</option>
+                            </select>
+                            <select name="prod_country" id="" size="1">
+                                <option selected disabled>Выберите страну-производителя</option>
+                                <option value="country1">Китай</option>
+                                <option value="country2">Индия</option>
+                            </select>
+                            <select name="prod_sort" id="">
+                                <option value="default" selected disabled>Сортировка</option>
+                                <option value="">По цене ↑</option>
+                                <option value="">По цене ↓</option>
+                                <option value="">По наименованию ↑</option>
+                                <option value="">По наименованию ↓</option>
+                            </select>
+                            <!-- <input type="range" min="1" max="10000" name="prod_price" id=""> -->
+                            <input type="reset" value="Отмена" class="form-button">
+                            <input type="submit" value="Показать" class="form-button">
+                        </form>
+                    </div>
+                </section>
+                <section class="catalog">
+                    <div class="catalog__row">
+                        <div class="catalog__item">
+                            <div class="product">
+                                <img class="product__photo" src="img/product_photo/i78956.jpg" alt="Фото товара">
+                                <div class="product__type">
+                                    Черный чай
+                                </div>
+                                <div class="product__name">
+                                    Дарждилинг
+                                </div>
+                                <div class="product__about">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ullam
+                                    voluptas? Repudiandae eum autem cum culpa eius consectetur tempore optio corrupti.
+                                    Consequatur sunt dolore excepturi accusamus autem fugiat quis error.
+                                </div>
+                                <div class="product__country">
+                                    Происхождение: Китай
+                                </div>
+                                <a class="product__button " href="">
+                                    315 &#8381
+                                </a>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="product">
+                                <img class="product__photo" src="img/product_photo/i78956.jpg" alt="Фото товара">
+                                <div class="product__type">
+                                    Черный чай
+                                </div>
+                                <div class="product__name">
+                                    Дарждилинг
+                                </div>
+                                <div class="product__about">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ullam
+                                    voluptas? Repudiandae eum autem cum culpa eius consectetur tempore optio corrupti.
+                                    Consequatur sunt dolore excepturi accusamus autem fugiat quis error.
+                                </div>
+                                <div class="product__country">
+                                    Происхождение: Китай
+                                </div>
+                                <div class="product__button">
+                                    1099 &#8381
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="product">
+                                <img class="product__photo" src="img/product_photo/i78956.jpg" alt="Фото товара">
+                                <div class="product__type">
+                                    Черный чай
+                                </div>
+                                <div class="product__name">
+                                    Дарждилинг
+                                </div>
+                                <div class="product__about">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ullam
+                                    voluptas?
+                                </div>
+                                <div class="product__country">
+                                    Происхождение: Китай
+                                </div>
+                                <div class="product__button">
+                                    155 &#8381
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="product">
+                                <img class="product__photo" src="img/product_photo/i78956.jpg" alt="Фото товара">
+                                <div class="product__type">
+                                    Черный чай
+                                </div>
+                                <div class="product__name">
+                                    Дарждилинг
+                                </div>
+                                <div class="product__about">
+                                    Lorem
+                                </div>
+                                <div class="product__country">
+                                    Происхождение: Китай
+                                </div>
+                                <div class="product__button">
+                                    123 &#x20bd
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inform">
+                <p class="footer__text">
+                    ©2020 Makeevka
+                </p>
+            </div>
+            <div class="footer__links">
+                <ul class="footer__social social">
+                    <li class="social__item">
+                        <a href="https://goo.gl/maps/RyS3N454s2Pv62Vd8" class="social__link"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://www.facebook.com/" class="social__link"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://www.instagram.com/terek.kt/" class="social__link"></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://web.telegram.org/" class="social__link"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
